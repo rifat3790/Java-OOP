@@ -1,0 +1,28 @@
+
+package LabReport01_prob3;
+
+
+public class Motocycle extends Vehical {
+    private int cnum;
+    private double fkm;
+    
+    public Motocycle(String brand,String model,int year,int cnum,double n){
+        super(brand,model,year,n);
+        this.cnum=cnum;
+        fkm=n*45;
+    }
+
+    public int getCnum() {
+        return cnum;
+    }
+    public double getFkm() {
+        return fkm;
+    }
+    
+    public void display(){
+        System.out.println("This is Motocycle class.");
+        super.display();
+        System.out.println("Number of clynders: "+cnum);
+        System.out.printf("Motocycle Running %f km.\n",fkm);
+    }
+}

@@ -1,0 +1,10 @@
+class Animal {
+    protected String s="GUB";
+    void eat(){
+        System.out.println("I eat food.");
+    }
+    
+    void sleep(){
+        System.out.println("I can sleep.");
+    }
+}

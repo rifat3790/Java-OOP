@@ -1,0 +1,49 @@
+import java.util.Scanner;
+
+
+public class TransposeMatrix {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int[][] a=new int[3][3];
+        int[][] tr=new int[3][3];
+        int i,j;
+        
+        for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                System.out.printf("a[%d][%d]= ",i,j);
+                a[i][j]=s.nextInt();
+            }
+        }
+        
+         for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                tr[i][j]=a[j][i];
+            }
+        }
+         
+         System.out.println("\n\nOrginal Matrix: ");
+          for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                System.out.print("\t"+a[i][j]);
+            }
+            System.out.println();
+        }
+          
+           System.out.println("\n\nTranspose Matrix: ");
+          for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                System.out.print("\t"+tr[i][j]);
+            }
+            System.out.println();
+        }
+    }
+}

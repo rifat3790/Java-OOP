@@ -1,0 +1,20 @@
+
+package Example;
+
+public class TeacherExample {
+    public static void main(String[] args) {
+        
+        Teacher ob1=new Teacher();
+        
+        Teacher ob2=new Teacher("Rifat",221902178,28500);
+        ob2.display();
+        
+        Teacher ob3=new Teacher("Priyo",221902177,30000);
+        
+        Teacher ob=new Teacher(ob3);
+        ob.display();
+                
+        
+    }
+    
+}

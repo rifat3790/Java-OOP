@@ -1,0 +1,12 @@
+
+package LabReport1_Prob1;
+
+
+public class Tringle extends Shape {
+    
+    void area(double x,double y){
+        results=0.5*x*y;
+        System.out.println("Tringle Area: "+results);
+    }
+    
+}

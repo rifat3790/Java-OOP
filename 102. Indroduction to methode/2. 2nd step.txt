@@ -1,0 +1,43 @@
+public class Test {
+
+       String name,gender;
+    int phone,age;
+    
+    void display()
+    {
+        System.out.println("Teacher1 Name: "+name);
+        System.out.println("Teacher1 Gender: "+gender);
+        System.out.println("Teacher1 phone: "+phone);
+        System.out.println("Teacher1 Age: "+age);
+        System.out.println("\n\n");
+        
+    }
+
+    public static void main(String[] args)
+    {
+        Teacher teacher1,teacher2,teacher3;
+        teacher1=new Teacher();
+        teacher2=new Teacher();
+        teacher3=new Teacher();
+        
+        teacher1.name="Sultanul Ovi";
+        teacher1.gender="Male";
+        teacher1.phone=1952321390;
+        teacher1.age=25;
+        teacher1.display();
+        
+        teacher2.name="Sumaiya Khatun";
+        teacher2.gender="female";
+        teacher2.phone=1952343590;
+        teacher2.age=15;
+        teacher2.display();
+        
+        teacher3.name="Refat";
+        teacher3.gender="Male";
+        teacher3.phone=114321390;
+        teacher3.age=35;
+        teacher3.display();
+        
+    }
+    
+}

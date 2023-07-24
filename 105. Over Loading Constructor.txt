@@ -1,0 +1,47 @@
+public class OverloadingConstructor {
+    
+    String name,gender;
+    int age,phone;
+    
+    OverloadingConstructor()
+    {
+        System.out.println("No Information.\n\n");
+    }
+    
+    OverloadingConstructor(String n,String m){
+        
+        name=n;
+        gender=m;
+    }
+    
+    OverloadingConstructor(String n,String m,int a,int p){
+        
+        name=n;
+        gender=m;
+        phone=p;
+        age=a;
+    }
+    
+    void display()
+    {
+        System.out.println("Name: "+name);
+        System.out.println("Gender: "+gender);
+        System.out.println("Phone: "+phone);
+        System.out.println("Age: "+age);
+        System.out.println("\n\n");
+    }
+
+    public static void main(String[] args) {
+        OverloadingConstructor teacher1,teacher2,teacher3;
+        
+        teacher1=new OverloadingConstructor();
+        
+        teacher2=new OverloadingConstructor("Refat","Male");
+        teacher2.display();
+        
+        teacher3=new OverloadingConstructor("Nishi","Female",35,173472471);
+        teacher3.display();
+        
+        
+    }
+}

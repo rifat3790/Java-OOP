@@ -1,0 +1,36 @@
+
+package Example;
+
+
+public class Teacher {
+    private String name;
+    private int id;
+    private double salary;
+    
+    
+    
+    Teacher(){
+        System.out.println("No value.");
+        
+    }
+    Teacher(String name,int id,double salary){
+        this.name=name;
+        this.id=id;
+        this.salary=salary;
+        
+    }
+    
+    Teacher(Teacher ob){
+        this.name=ob.name;
+        this.id=ob.id;
+        this.salary=ob.salary;
+    }
+    
+    void display(){
+        System.out.println("Name: "+name);
+        System.out.println("ID: "+id);
+        System.out.println("Salary: "+salary);
+    }
+    
+    
+}

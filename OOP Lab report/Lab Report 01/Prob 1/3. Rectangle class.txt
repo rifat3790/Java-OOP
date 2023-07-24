@@ -1,0 +1,12 @@
+
+package LabReport1_Prob1;
+
+
+public class Rectangle extends Shape{
+    
+       void area(double x,double y){
+         results=x*y;
+           System.out.println("Rectangle Area: "+results);
+        
+    }
+}

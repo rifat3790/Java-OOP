@@ -1,0 +1,14 @@
+public class Rectangle extends Shape {
+    
+    Rectangle(double m,double n){
+        super(m,n);
+    
+    }
+    
+    @Override
+    void area(){
+        double result=m*n;
+        System.out.println("Rectangle area: "+result);
+    }
+    
+}

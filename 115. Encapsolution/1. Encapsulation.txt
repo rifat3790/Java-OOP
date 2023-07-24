@@ -1,0 +1,33 @@
+public class Encap3 {
+    
+    private String name;
+    private int age;
+    
+    public String getName(){
+        return name;
+    }
+    
+    public int getAge(){
+        return age;
+    }
+    
+    void setNmae(String name)
+    {
+        this.name=name;
+    }
+    
+    void setAge(int age){
+        this.age=age;
+    }
+
+    public static void main(String[] args) {
+        
+        Encap3 n=new Encap3();
+        
+        n.setNmae("Rifat");
+        n.setAge(21);
+        
+        System.out.println("Name: "+n.getName()+"\nAge: "+n.getAge());
+        
+    }
+}

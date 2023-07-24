@@ -1,0 +1,9 @@
+
+package LabReport02_prob2;
+
+
+public interface SortAlgorithm {
+    
+    void sort(int[] a);
+    
+}

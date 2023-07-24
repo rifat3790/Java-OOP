@@ -1,0 +1,16 @@
+
+package LabReport01_prob2;
+
+
+public class Developer extends Employee{
+    
+    public Developer(int experience) {
+        super(experience);
+    }
+
+    @Override
+    public double calculateSalary() {
+        return 40000 + (getExperience());
+    }
+    
+}

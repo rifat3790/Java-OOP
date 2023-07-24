@@ -1,0 +1,15 @@
+
+package LabReport02_prob3;
+
+
+public class StripeGateway implements PaymentGateway{
+    @Override
+    public void processpayment(double n){
+        System.out.printf("Processing payment of $%f via stripe\n",n);
+    }
+    @Override
+    public void refundpayment(String tid){
+        System.out.println("Refunding payment with transaction ID " + tid + " via stripe");
+    }
+    
+}

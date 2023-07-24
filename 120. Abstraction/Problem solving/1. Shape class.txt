@@ -1,0 +1,11 @@
+public abstract class Shape {
+    double m,n;
+    
+    Shape(double m,double n){
+        this.m=m;
+        this.n=n;
+    }
+    
+    abstract void area();
+    
+}

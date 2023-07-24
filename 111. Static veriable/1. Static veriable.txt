@@ -1,0 +1,31 @@
+public class Staticveriable {
+    
+    String name;
+    int id,phone;
+    static String versity=Green University.;
+    
+    Staticveriable(String n,int i,int p)
+    {
+        name=n;
+        id=i;
+        phone=p;
+    }
+    
+    void display(){
+        
+        System.out.println(Name +name);
+        System.out.println(ID +id);
+        System.out.println(Phone +phone);
+        System.out.println(University Name +versity);
+        System.out.println(nn);
+        
+    }
+
+    public static void main(String[] args) {
+        Staticveriable s1=new Staticveriable(Rifat,178,1952321390);
+        s1.display();
+        
+        Staticveriable s2=new Staticveriable(Priyo,177,214789545);
+        s2.display();
+    }
+}

@@ -1,0 +1,27 @@
+
+package LabReport01_prob2;
+
+
+public class Employee {
+    private int experience;
+    
+
+    public Employee(int experience) {
+        this.experience = experience;
+    }
+
+    public int getExperience() {
+        if(experience>=1 && experience<2)
+        return 10000;
+        else if(experience>=2 && experience<3)
+            return 20000;
+        else if(experience>=3)
+            return 30000;
+        else return 0;
+    }
+
+    public double calculateSalary() {
+        return 0; 
+    }
+    
+}

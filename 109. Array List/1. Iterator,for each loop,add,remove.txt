@@ -1,0 +1,40 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class ArrayList {
+
+    public static void main(String[] args) {
+        
+        ArrayList<Integer> a=new ArrayList<Integer>();
+       
+       System.out.println(a.size());
+       
+       a.add(10);
+       a.add(5);
+       a.add(20);
+       a.add(50);
+       a.add(15);
+       a.add(5,75);
+       
+       //iterator 
+       /*Iterator it=a.iterator();
+       while(it.hasNext())
+       {
+           System.out.print("\t"+it.next());
+       }
+       */
+       //  for each loop
+       for(int x: a)
+       {
+           System.out.print("\t"+x);
+       }
+       //System.out.println(a);
+       
+       // Remove 
+       
+       a.remove(2);
+       System.out.print("\nAfter removing: \t"+a);
+       System.out.println("\n\n"+a.size());
+       
+    }
+}

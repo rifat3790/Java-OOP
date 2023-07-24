@@ -1,0 +1,13 @@
+public class Trangle extends Shape {
+    
+    Trangle(double m,double n){
+        super(m,n);
+    }
+    
+    @Override
+    void area(){
+        double result=05* m*n;
+        System.out.println("Trangle area: "+result);
+    }
+    
+}

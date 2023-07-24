@@ -1,0 +1,39 @@
+
+import java.util.Scanner;
+
+public class BinarySearch {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n,i,l,r,mid;
+        System.out.print("Enter array limit: ");
+        n=s.nextInt();
+        l=0;
+        r=n-1;
+        int[] a=new int[n];
+        System.out.print("Enter array elements: ");
+        for(i=0;i<n;i++)
+        {
+            a[i]=s.nextInt();
+        }
+        System.out.print("Enter searching value:");
+        int val=s.nextInt();
+        while(l<=r)
+        {
+            mid=(l+r)/2;
+            if(a[mid]==val)
+            {
+                System.out.print("item fount in position: "+mid);
+                break;
+            }
+            else if(a[mid]<val)
+                l=mid+1;
+            else
+                r=mid-1;
+        }
+        
+        if(l>r)
+            System.out.println("Item not found.");
+        
+    }
+}

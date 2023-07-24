@@ -1,0 +1,9 @@
+
+package LabReport02_Prob1;
+
+
+public interface Vehical {
+    
+    void start();
+    void stop();
+}

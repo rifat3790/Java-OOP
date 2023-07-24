@@ -1,0 +1,21 @@
+
+package Problem4;
+
+import java.util.Scanner;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.print("Enter any square number: ");
+        int n=s.nextInt();
+        A a=new A(n);
+        try{
+            a.B();
+        }
+        catch(MyException e){
+            System.out.println(""+e);
+        }
+    }
+    
+}

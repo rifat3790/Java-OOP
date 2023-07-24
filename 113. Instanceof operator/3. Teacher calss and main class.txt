@@ -1,0 +1,16 @@
+public class Teacher extends Student {
+    
+    
+    public static void main(String[] args) {
+        Animal a=new Animal();
+        Student s=new Student();
+        Teacher t=new Teacher();
+        
+        System.out.println("a instanceof Animal: "+(a instanceof Animal));
+        System.out.println("s instanceof Animal: "+(s instanceof Animal));
+        System.out.println("t instanceof Animal: "+(t instanceof Animal));
+        System.out.println("t instanceof Student: "+(t instanceof Student));
+        System.out.println("s instanceof Teacher: "+(s instanceof Teacher));
+    }
+    
+}

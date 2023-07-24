@@ -1,0 +1,17 @@
+
+public class CallbyValue {
+    
+    void change(int n)
+    {
+        n=20;
+    }
+
+    public static void main(String[] args) {
+        CallbyValue ob=new CallbyValue();
+        int x=10;
+        System.out.println("Before calling x= "+x);
+        
+        ob.change(x);
+        System.out.println("After calling x= "+x);
+    }
+}

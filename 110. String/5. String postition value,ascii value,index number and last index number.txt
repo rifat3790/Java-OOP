@@ -1,0 +1,25 @@
+
+import java.util.Scanner;
+
+
+public class String5 {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter any string name: ");
+        
+        String name=s.nextLine();
+        
+        char c=name.charAt(0);
+        System.out.println("0th index value: "+c);
+        
+        int val=name.codePointAt(0);
+        System.out.println("Ascii value: "+val);
+        
+        int pos=name.indexOf('n');
+        System.out.println("Char position: "+pos);
+        
+        pos=name.lastIndexOf('n');
+        System.out.println("Last index of n: "+pos);
+    }
+}

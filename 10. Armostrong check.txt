@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class ArmoNumberCheck {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter three digit integer number:");
+        int num=s.nextInt();
+        int n,r,sum=0;
+        n=num;
+        while(n!=0)
+        {
+            r=n%10;
+            sum=sum+(r*r*r);
+            n=n/10;
+        }
+        if(sum==num)
+            System.out.println("Armostrong number is "+num);
+        else
+            System.out.println("This number is not armostrong "+num);
+        
+        
+    }
+}

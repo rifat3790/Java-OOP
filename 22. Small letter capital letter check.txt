@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Capital {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        char c;
+        System.out.print("Enter any alphabet:");
+        c=s.next().charAt(0);
+        
+        if(c>='a' && c<='z')
+            System.out.println("This is small letter.");
+        else if(c>='A' && c<='Z')
+            System.out.println("This is capital letter.");
+        else
+            System.out.println("This is not alhabet");
+        
+    }
+}

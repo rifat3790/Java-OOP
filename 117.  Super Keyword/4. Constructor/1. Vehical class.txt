@@ -1,0 +1,16 @@
+public class Vehical {
+    
+    String color;
+    double weight;
+    
+    Vehical(String c,double w){
+        color=c;
+        weight=w;
+    }
+    
+    void display(){
+        System.out.println("COlour: "+color);
+        System.out.println("Weight: "+weight);
+    }
+    
+}

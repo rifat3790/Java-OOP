@@ -1,0 +1,11 @@
+public class BooleanComare {
+
+    public static void main(String[] args) {
+        boolean x=true,y=false,z;
+        z=(x==y);
+                System.out.println("X= "+x);
+        System.out.println("Y= "+y);
+        System.out.println("Z= "+z);
+        
+    }
+}

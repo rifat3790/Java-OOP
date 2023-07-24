@@ -1,0 +1,32 @@
+
+import java.util.Scanner;
+
+
+public class LuckyNumber {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter 4 digit integer number:");
+        int n=s.nextInt();
+        
+        int a,b,c,d;
+        d=n%10;
+        c=(n/10)%10;
+        b=(n/100)%10;
+        a=(n/1000)%10;
+        
+        System.out.println("A= "+a);
+        System.out.println("B= "+b);
+        System.out.println("C= "+c);
+        System.out.println("D= "+d);
+        
+        if(a+b==c+d)
+        {
+            System.out.printf("The number %d is a lucky number!",n);
+        }
+        else
+            System.out.printf("The number %d is not a lucky number!",n);
+
+            
+    }
+}

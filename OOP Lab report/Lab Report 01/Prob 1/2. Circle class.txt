@@ -1,0 +1,15 @@
+
+package LabReport1_Prob1;
+
+
+public class Circle extends Shape{
+    
+     
+     
+     void area(double x){
+         results=Math.PI*x*x;
+         System.out.println("Circle Area: "+results);
+         
+    }
+    
+}

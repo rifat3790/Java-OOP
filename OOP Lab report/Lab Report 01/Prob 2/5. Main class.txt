@@ -1,0 +1,28 @@
+
+package LabReport01_prob2;
+
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        Scanner s=new Scanner(System.in);
+        System.out.print("Enter Manager years of experience:");
+        int a=s.nextInt();
+        Employee m = new Manager(a);
+        
+        System.out.print("Enter Developer years of experience:");
+        int b=s.nextInt();
+        Employee d = new Developer(b);
+        
+        System.out.print("Enter Manager years of experience:");
+        int c=s.nextInt();
+        Employee p=new Salesperson(c);
+        
+        System.out.printf("Manager experience %d years,SO Salary: %f\n",a,m.calculateSalary());
+        System.out.printf("Developer experience %d years,so Salary: %f\n",b, d.calculateSalary());
+        System.out.printf("Salesperson experience %d years,so Salary: %f\n ",c,p.calculateSalary());
+    }
+    
+}

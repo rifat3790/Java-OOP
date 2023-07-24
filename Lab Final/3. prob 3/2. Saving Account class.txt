@@ -1,0 +1,21 @@
+
+package Prob2;
+
+
+public class SavingAccount extends BankAccount{
+    
+    public SavingAccount(String accountName, double blance) {
+        super(accountName, blance);
+    }
+    
+    public void withdraw(double x){
+        if(blance-x<100){
+            System.out.println("Insufficiant blance.");
+        }
+         else{
+            blance=blance-x;
+            System.out.println("Your account Number is: "+accountNumber+"\nWithdraw successful\n Your new blance is: "+blance);
+        }
+        
+    }
+}

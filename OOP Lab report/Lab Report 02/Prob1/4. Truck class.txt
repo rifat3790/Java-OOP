@@ -1,0 +1,16 @@
+
+package LabReport02_Prob1;
+
+
+public class Truck implements Vehical {
+    
+    @Override
+    public void start(){
+        System.out.println("Truck starting...Engine running.");
+    }
+    @Override
+    public void stop(){
+        System.out.println("Turck stoping..Engine off");
+    }
+    
+}

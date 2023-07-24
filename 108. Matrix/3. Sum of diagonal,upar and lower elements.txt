@@ -1,0 +1,72 @@
+import java.util.Scanner;
+
+
+public class SubstructionOfTwoMatrix {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int[][] a=new int[3][3];
+        //int[][] b=new int[3][3];
+        int i,j;
+        int disum=0,upsum=0,lowsum=0;
+        
+        for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                System.out.printf("A[%d][%d]= ",i,j);
+                a[i][j]=s.nextInt();
+            }
+        }
+        
+        System.out.println("\n\nThis matrix is: ");
+         for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                System.out.printf("\t"+a[i][j]);
+                
+            }
+            System.out.println();
+        }
+        
+        for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                if(i==j)
+                {
+                    disum+=a[i][j];
+                }
+            }
+        }
+        
+          for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                if(i<j)
+                {
+                    upsum+=a[i][j];
+                }
+            }
+        }
+          
+          
+            for(i=0;i<3;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                if(i>j)
+                {
+                    lowsum+=a[i][j];
+                }
+            }
+        }
+        
+        System.out.println("\n\nSum of diagonal elements:"+disum);
+        System.out.println("\n\nSum of uper elements:"+upsum);
+        System.out.println("\n\nSum of lower elements:"+lowsum);
+        
+    }
+}

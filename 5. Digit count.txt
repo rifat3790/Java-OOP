@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class DataType {
+
+    public static void main(String[] args) {
+        Scanner n= new Scanner(System.in);
+       int count=0;
+       System.out.println("Enter any integer number:\n");
+       int num=n.nextInt();
+       while(num!=0)
+       {
+           num=num/10;
+           count++;
+       }
+        System.out.println("Total number = "+count);
+    }
+}

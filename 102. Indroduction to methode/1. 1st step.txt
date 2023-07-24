@@ -1,0 +1,14 @@
+public class Teacher {
+    String name,gender;
+    int phone,age;
+    
+    void display()
+    {
+        System.out.println("Teacher1 Name: "+name);
+        System.out.println("Teacher1 Gender: "+gender);
+        System.out.println("Teacher1 phone: "+phone);
+        System.out.println("Teacher1 Age: "+age);
+        System.out.println("\n\n");
+        
+    }
+}

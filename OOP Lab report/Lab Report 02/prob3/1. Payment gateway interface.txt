@@ -1,0 +1,10 @@
+
+package LabReport02_prob3;
+
+
+public interface PaymentGateway {
+    
+    void processpayment(double n);
+    void refundpayment(String tid);
+    
+}

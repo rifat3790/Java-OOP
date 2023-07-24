@@ -1,0 +1,18 @@
+
+package Bank;
+
+
+public class CurrentAccount extends BankAccount {
+    
+      @Override
+    void deposite(int n){
+        super.deposite(n);
+        
+    }
+    
+    @Override
+    void withdraw(int n){
+        super.withdraw(n);
+    }
+    
+}

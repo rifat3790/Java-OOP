@@ -1,0 +1,12 @@
+public class Main {
+    public static void main(String[] args) {
+        Person p1=new Person("Rifat",21);
+        p1.display();
+        
+        System.out.println("");
+        
+        Person p2=new Person("Rifat",21,"Black");
+        p2.display();
+    }
+    
+}

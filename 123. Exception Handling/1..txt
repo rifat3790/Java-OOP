@@ -1,0 +1,19 @@
+
+package OOP;
+
+
+public class Exception_handling {
+    public static void main(String[] args) {
+        
+        try{
+        int x=10,y=0;
+        int result=x/y;
+        System.out.println("Results: "+result);
+            
+        }catch(Exception e){
+            System.out.println("Exception: "+e);
+        }
+        
+        System.out.println("Last line of the code.");
+    }
+}

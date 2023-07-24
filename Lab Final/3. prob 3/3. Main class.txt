@@ -1,0 +1,18 @@
+
+package Prob2;
+
+
+public class Main {
+    public static void main(String[] args) {
+        BankAccount b=new BankAccount("221902178",1000);
+        b.deposite(500);
+        b.withdraw(1000);
+        System.out.println("");
+        
+        SavingAccount s=new SavingAccount("847813247",500);
+        s.deposite(800);
+        s.withdraw(1000);
+        s.withdraw(500);
+    }
+    
+}

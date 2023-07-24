@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+
+public class Factrorial {
+    
+    int fact(int n){
+        
+        if(n==1)
+            return 1;
+        else
+            return n*fact(n-1);
+    }
+
+    public static void main(String[] args) {
+        
+        Factrorial n=new Factrorial();
+        
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter any integer number: ");
+        int x=s.nextInt();
+        
+        int result=n.fact(x);
+        System.out.println("Factrorial is : "+result);
+        
+    }
+}

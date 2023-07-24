@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class SumJava {
+
+    public static void main(String[] args) {
+        
+        int n,n1,n2,i,sum;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the fibonacci number:");
+        n=sc.nextInt();
+        n1=0;
+        n2=1;
+        for(i=1;i<=n;i++)
+        {
+            System.out.print("\t"+n1);
+            sum=n1+n2;
+            n1=n2;
+            n2=sum;
+        }
+    }
+}

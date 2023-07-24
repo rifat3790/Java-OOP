@@ -1,0 +1,8 @@
+public class B extends A {
+    //A();
+         B(){
+        super();
+        System.out.println("Inside B class.");
+    }
+    
+}

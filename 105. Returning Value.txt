@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+
+public class Returnvalue {
+    
+    int square(int n){
+        
+        return n*n;
+    }
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.print("Enter any integer number:");
+        int n=s.nextInt();
+        
+        Returnvalue a=new Returnvalue();
+        
+        System.out.println("Square = "+a.square(n));
+        
+    }
+}

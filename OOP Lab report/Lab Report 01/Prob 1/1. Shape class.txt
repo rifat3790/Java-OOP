@@ -1,0 +1,13 @@
+
+package LabReport1_Prob1;
+
+
+public class Shape {
+    
+    double results;
+     
+    void area(double a,double b){
+       
+    }
+    
+}

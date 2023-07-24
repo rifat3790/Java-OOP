@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+
+public class BooleanFunction {
+
+    public static void main(String[] args) {
+        int a,b;
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter two integer number:");
+        a=s.nextInt();
+        b=s.nextInt();
+        boolean x=true;
+        boolean y=false;
+        if(a>b)
+        {
+            System.out.println(x);
+        }
+        else
+        {
+            System.out.println(y);
+        }
+    }
+}

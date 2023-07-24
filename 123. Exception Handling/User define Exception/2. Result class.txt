@@ -1,0 +1,15 @@
+
+package Pra;
+
+
+public class Product {
+    
+    void cg(double c)throws MyException{
+        if(c<2.50){
+            throw new MyException("Low cg exception.");
+        }
+        else{
+            System.out.println("No exception");
+        }
+    }
+}

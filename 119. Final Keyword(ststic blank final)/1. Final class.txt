@@ -1,0 +1,14 @@
+public class Final {
+    
+    final String name="GUB";
+    static final int fee;
+    
+    static{
+    fee=21;
+}
+    
+    void display(){
+        System.out.println("Name: "+name);
+        System.out.println("Fees: "+fee);
+    }
+}

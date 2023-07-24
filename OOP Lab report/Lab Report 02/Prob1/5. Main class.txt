@@ -1,0 +1,23 @@
+
+package LabReport02_Prob1;
+
+
+public class Main {
+    public static void main(String[] args) {
+        Vehical v;
+        v=new Car();
+        v.start();
+        v.stop();
+        System.out.println("");
+        
+        v=new Motocycle();
+        v.start();
+        v.stop();
+        System.out.println("");
+        
+        v=new Truck();
+        v.start();
+        v.stop();
+    }
+    
+}

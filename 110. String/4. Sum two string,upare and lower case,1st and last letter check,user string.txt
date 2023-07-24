@@ -1,0 +1,35 @@
+import java.util.Scanner;
+
+
+public class StringSum {
+
+    public static void main(String[] args) {
+       Scanner s=new Scanner(System.in);
+        System.out.println("Enter first name: ");
+        String s1=s.nextLine();
+        System.out.println("Enter last name: ");
+        String s2=s.nextLine();
+        
+        System.out.println("Full name: "+s1.concat(" ".concat(s2)));
+        
+        System.out.println("Uppar case: "+s1.toUpperCase());
+        System.out.println("Lower case: "+s2.toLowerCase());
+        
+        System.out.println("First name letter check: "+s1.startsWith("M"));
+        
+        System.out.println("Last name letter check: "+s2.endsWith("at"));
+        
+        
+        String[] a=new String[5];
+        int i;
+        for(i=0;i<5;i++)
+        {
+            a[i]=s.nextLine();
+        }
+        
+        for(i=0;i<5;i++)
+        {
+            System.out.println(a[i]);
+        }
+    }
+}

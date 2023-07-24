@@ -1,0 +1,42 @@
+public class Teacher {
+    String name,gender;
+    int phone,age;
+    
+    void setinfo(String n,String m,int p,int a){
+        
+        name=n;
+        gender=m;
+        phone=p;
+        age=a;
+    }
+    
+    void display()
+    {
+        System.out.println("Teacher Name: "+name);
+        System.out.println("Teacher Gender: "+gender);
+        System.out.println("Teacher phone: "+phone);
+        System.out.println("Teacher Age: "+age);
+        System.out.println("\n\n");
+        
+    }
+
+    public static void main(String[] args)
+    {
+        Teacher teacher1,teacher2,teacher3;
+        teacher1=new Teacher();
+        teacher2=new Teacher();
+        teacher3=new Teacher();
+        
+     
+        teacher1.setinfo("Sultanul Ovi","male" ,1952321390,25);
+        teacher1.display();
+        
+        teacher2.setinfo("Sumaiya Sultana", "Female", 196462346, 18);
+        teacher2.display();
+        
+      
+        teacher3.setinfo("Refat","Male",93428548,37);
+        teacher3.display();
+        
+    }
+}

@@ -1,0 +1,31 @@
+
+package Bank;
+
+
+public class BankAccount {
+    
+    double b=0;
+    
+    void deposite(int n){
+        if(n>100){
+            b=b+n;
+            
+        }
+        else
+            System.out.println("Minimum amount require 100tk.\n please try again.");
+    }
+    
+    void withdraw(int n){
+        if(b>n){
+            b-=n;
+            
+        }
+        else
+            System.out.println("Insufficiant blance.");
+    }
+     
+    double checkblance(){
+        return b;
+    }
+    
+}

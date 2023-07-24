@@ -1,0 +1,34 @@
+public class St extends Inhert {
+    
+    private String qu;
+
+    public String getQu() {
+        return qu;
+    }
+
+    public void setQu(String qu) {
+        this.qu = qu;
+    }
+    
+    
+    
+    
+    void display2(){
+        display1();
+        System.out.println("Qualification: "+qu);
+    }
+    
+    public static void main(String[] args) {
+        St s=new St();
+        
+        s.setName("Rifat.");
+        s.setAge(21);
+        s.setQu("Bsc in CSE");
+        s.getName();
+        s.getAge();
+        s.getQu();
+        s.display2();
+    }
+    
+    
+}

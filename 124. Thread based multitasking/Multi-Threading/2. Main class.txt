@@ -1,0 +1,13 @@
+
+package Multithread;
+
+
+public class Main {
+    public static void main(String[] args) throws InterruptedException {
+        for(int i=0;i<5;i++){
+        Multi m=new Multi(i);
+        m.start();
+        m.join();
+    }
+    }   
+}

@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+
+public class LinearSearc {
+
+    public static void main(String[] args) {
+        int n,i,pos=-1,val;
+        Scanner s=new Scanner(System.in);
+        System.out.print("Enter array limit:");
+        n=s.nextInt();
+        int[] a=new int[n];
+        System.out.print("Enter array elements:");
+        for(i=0;i<n;i++)
+        {
+            a[i]=s.nextInt();
+        }
+        System.out.print("Enter search value:");
+        val=s.nextInt();
+        
+        for(i=0;i<n;i++)
+        {
+            if(a[i]==val)
+            {
+                pos=i+1;
+                break;
+            }
+        }
+        if(pos==-1)
+            System.out.print("Item not found in the array!");
+        else
+            System.out.println("Item found in position ."+pos);
+    }
+}

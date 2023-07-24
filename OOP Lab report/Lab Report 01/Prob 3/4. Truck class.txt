@@ -1,0 +1,28 @@
+
+package LabReport01_prob3;
+
+
+public class Truck extends Vehical{
+    private int ccp;
+    private double fkm;
+    public Truck(String brand,String model,int year,int ccp,double n){
+        super(brand,model,year,n);
+        this.ccp=ccp;
+        fkm=n*8.5;
+    }
+
+    public int getCcp() {
+        return ccp;
+    }
+
+    public double getFkm() {
+        return fkm;
+    }
+    
+    public void display(){
+        System.out.println("This is Truck class.");
+        super.display();
+        System.out.println("Cargo capacity: "+ccp+"tons.");
+        System.out.printf("Truck Running %f km.\n",fkm);
+    }
+}

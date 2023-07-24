@@ -1,0 +1,19 @@
+
+package LabReport02_prob3;
+
+
+public class Main {
+    public static void main(String[] args) {
+        PaymentGateway p;
+        
+        p=new PaypalGateway();
+        p.processpayment(500);
+        p.refundpayment("221902178");
+        System.out.println("");
+        
+        p=new StripeGateway();
+        p.processpayment(350);
+        p.refundpayment("a5473284f90");  
+    }
+    
+}

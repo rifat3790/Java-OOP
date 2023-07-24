@@ -1,0 +1,17 @@
+public class StringTest {
+
+    public static void main(String[] args) {
+        String s1="Md Refayet";
+        String s2=new String("Md Refayet");
+        
+        System.out.println("S1 name:"+s1);
+        System.out.println("S2 name:"+s2);
+        
+        if(s1.contains("Md"))
+        {
+            System.out.println("Equals.");
+        }
+        else 
+            System.out.println("Not Equals.");
+    }
+}

@@ -1,0 +1,27 @@
+
+// Create class name Box.Declier 3 veriable height,weight and length(double type).Create display methode name display and calculate volume.now write main methode and pass parametter (10,10,20) and(20,20,30)
+package com.mycompany.box;
+
+public class Box {
+    
+    double height,weight,length;
+    
+    Box(double h,double w,double l){
+        height=h;
+        weight=w;
+        length=l;
+    }
+    
+    void display()
+    {
+        double vol=height*weight*length;
+        System.out.println("Volume: "+vol);
+    }
+
+    public static void main(String[] args) {
+       Box b1=new Box(10,20,10);
+       Box b2=new Box(20,20,30);
+       b1.display();
+       b2.display();
+    }
+}

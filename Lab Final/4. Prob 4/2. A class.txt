@@ -1,0 +1,19 @@
+
+package Problem4;
+
+
+public class A {
+    
+    int n;
+    A(int n){
+        this.n=n;
+    }
+     void B()throws MyException{
+         if(n<0){
+             throw new MyException("Square is not possible.");
+         }
+         else{
+             System.out.println("Square: "+(n*n));
+         }
+     }
+}

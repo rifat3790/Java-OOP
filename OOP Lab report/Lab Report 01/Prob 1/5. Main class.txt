@@ -1,0 +1,17 @@
+
+package LabReport1_Prob1;
+
+
+public class Main {
+    
+    public static void main(String[] args) {
+        Circle c=new Circle();
+        c.area(5);
+        
+        Rectangle r=new Rectangle();
+        r.area(10, 20);
+        
+        Tringle t=new Tringle();
+        t.area(45, 30);
+    }
+}

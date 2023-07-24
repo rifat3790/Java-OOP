@@ -1,0 +1,72 @@
+import java.util.Scanner;
+
+
+public class Matrix {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter the matrix row and column: ");
+        int[][] a=new int[2][3];
+        int[][] b=new int[2][3];
+        int[][] c=new int [2][3];
+        int i,j;
+        System.out.println("Enter elements for A matrix: ");
+        for(i=0;i<2;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                System.out.printf("a[%d][%d]= ",i,j);
+                a[i][j]=s.nextInt();
+            }
+        }
+        
+        System.out.println("Enter elements for B matrix: ");
+        for(i=0;i<2;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                System.out.printf("b[%d][%d]= ",i,j);
+                b[i][j]=s.nextInt();
+            }
+        }
+        
+        System.out.println("\n\noutpur for A matrix:");
+         for(i=0;i<2;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                System.out.print("\t"+a[i][j]);
+            }
+            System.out.println();
+        }
+         
+         System.out.println("\n\noutpur for B matrix:");
+         for(i=0;i<2;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                System.out.print("\t"+b[i][j]);
+            }
+            System.out.println();
+        }
+        
+        
+        for(i=0;i<2;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                c[i][j]=a[i][j]+b[i][j];
+            }
+        }
+        
+         System.out.println("\n\nSum of two matrix:");
+         for(i=0;i<2;i++)
+        {
+            for(j=0;j<3;j++)
+            {
+                System.out.print("\t"+c[i][j]);
+            }
+            System.out.println();
+        }
+    }
+}

@@ -1,0 +1,20 @@
+
+package LabReport01_prob3;
+
+
+public class Main {
+    
+    public static void main(String[] args) {
+        Car c=new Car("Toyota","T-100",2021,4,100);
+        c.display();
+        System.out.println("");
+        
+        Motocycle m=new Motocycle("R15","Y3",2023,1,250);
+        m.display();
+        System.out.println("");
+        
+        Truck t=new Truck("Volvo","V100",2021,20,500);
+        t.display();
+    }
+    
+}

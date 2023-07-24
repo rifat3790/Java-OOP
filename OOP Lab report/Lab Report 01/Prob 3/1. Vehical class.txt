@@ -1,0 +1,37 @@
+
+package LabReport01_prob3;
+
+
+public class Vehical {
+    
+    private String brand;
+    private String model;
+    private int year;
+    double fuelcost;
+    
+    public Vehical(String b,String m,int y,double n){
+        brand=b;
+        model=m;
+        year=y;
+        fuelcost=n*115.83;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
+
+    public String getModel() {
+        return model;
+    }
+
+    public int getYear() {
+        return year;
+    }
+    
+    public void display(){
+        System.out.println("Brand Name: "+brand);
+        System.out.println("Model Name: "+model);
+        System.out.println("Create Year: "+year);
+        System.out.printf("Fuel Cost: %f tk.\n ",fuelcost);
+    }
+}

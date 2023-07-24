@@ -1,0 +1,47 @@
+public class JavaMath {
+
+    public static void main(String[] args) {
+        int x=5,y=10;
+        int z=-55;
+        double a=45;
+        System.out.println("Maximum Number: "+Math.max(x,y));
+        System.out.println("Minimum Number: "+Math.min(x,y));
+        System.out.println("Square root Number: "+Math.sqrt(x));
+        System.out.println("Positive Number: "+Math.abs(z));
+        System.out.println("Maximum Number: "+Math.max(x,y));
+        System.out.println("Random Number: "+Math.random());
+        System.out.println("Random Number: "+Math.random()*101); // 1-100
+        System.out.println("Power Number: "+Math.pow(x,y));
+        System.out.println("Logarithm Number: "+Math.log(x));
+        System.out.println("Log10 Number: "+Math.log10(x));
+        
+        double b = Math.toRadians(a);  
+        
+        // return the trigonometric sine of a      
+        System.out.println("Sine value of a is: " +Math.sin(a));    
+          
+        // return the trigonometric cosine value of a  
+        System.out.println("Cosine value of a is: " +Math.cos(a));  
+          
+        // return the trigonometric tangent value of a  
+        System.out.println("Tangent value of a is: " +Math.tan(a));  
+          
+        // return the trigonometric arc sine of a      
+        System.out.println("Sine value of a is: " +Math.asin(a));    
+          
+        // return the trigonometric arc cosine value of a  
+        System.out.println("Cosine value of a is: " +Math.acos(a));  
+          
+        // return the trigonometric arc tangent value of a  
+        System.out.println("Tangent value of a is: " +Math.atan(a));  
+  
+        // return the hyperbolic sine of a      
+        System.out.println("Sine value of a is: " +Math.sinh(a));    
+          
+        // return the hyperbolic cosine value of a  
+        System.out.println("Cosine value of a is: " +Math.cosh(a));  
+          
+        // return the hyperbolic tangent value of a  
+        System.out.println("Tangent value of a is: " +Math.tanh(a));
+    }
+}

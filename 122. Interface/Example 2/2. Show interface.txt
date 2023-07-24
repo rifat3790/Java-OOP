@@ -1,0 +1,8 @@
+
+package Interface;
+
+
+public interface Show {
+    
+    void print();
+}

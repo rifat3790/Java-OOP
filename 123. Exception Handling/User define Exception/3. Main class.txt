@@ -1,0 +1,15 @@
+
+package Pra;
+
+public class Min {
+    public static void main(String[] args) {
+        Product p=new Product();
+        try{
+            p.cg(2);
+        }
+        catch(MyException e){
+            System.out.println(""+e);
+        }
+    }
+    
+}

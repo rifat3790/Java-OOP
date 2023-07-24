@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class ArrayInitial {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        double[] a=new double[5];
+        double sum=0;
+        int i;
+        System.out.print("Enter array elements:");
+        
+        for(i=0;i<5;i++)
+        {
+            a[i]=s.nextDouble();
+        }
+        
+        for(i=0;i<5;i++)
+        {
+            sum=sum+a[i];
+        }
+        System.out.println("Output: "+sum);
+        
+    }
+}

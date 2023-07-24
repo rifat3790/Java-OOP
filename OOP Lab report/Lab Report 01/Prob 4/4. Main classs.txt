@@ -1,0 +1,51 @@
+
+package LabReport01_prob4;
+
+
+
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        double[] studentGrades = {77, 85.0, 81, 73.0};
+        Student student = new Student("Md. Refayet Hossen", studentGrades);
+        double avg = student.calculateAverageGrade();
+        
+        if(avg>=80){
+            System.out.println("Average grade of "+ student.getName()+" is got CGPA: 4.00");
+        }
+        else if(avg>=75 && avg<80){
+            System.out.println("Average grade of "+ student.getName()+" is got CGPA: 3.75");
+        }
+        else if(avg>=70 && avg<75){
+            System.out.println("Average grade of "+ student.getName()+" is got CGPA: 3.50");
+        }
+        else if(avg>=65 && avg<70){
+            System.out.println("Average grade of "+ student.getName()+" is got CGPA: 3.25");
+        }
+        else if(avg>=60 && avg<65){
+            System.out.println("Average grade of "+ student.getName()+" is got CGPA: 3.00");
+        }
+        else if(avg>=55 && avg<60){
+            System.out.println("Average grade of "+ student.getName()+" is got CGPA: 2.75");
+        }
+        else if(avg>=50 && avg<55){
+            System.out.println("Average grade of "+ student.getName()+" is got CGPA: 2.50");
+        }
+        else if(avg>=45 && avg<50){
+            System.out.println("Average grade of "+ student.getName()+" is got CGPA: 2.25");
+        }
+        else if(avg>=40 && avg<45){
+            System.out.println("Average grade of "+ student.getName()+" is got CGPA: 2.00");
+        }
+        else{
+            System.out.println("Average grade of "+ student.getName()+" is fail.");
+        }
+        System.out.println("");
+        
+        String[] teacherSubjects = {"OOP", "OOP Lab", "Data Communicatio"};
+        Teacher teacher = new Teacher("Mahbubur Rahman", teacherSubjects);
+        teacher.displaySubjectsTaught();
+    }
+    
+}

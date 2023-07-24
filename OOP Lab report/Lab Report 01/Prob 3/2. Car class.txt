@@ -1,0 +1,30 @@
+
+package LabReport01_prob3;
+
+
+public class Car extends Vehical{
+    
+    private int door;
+    private double fkm;
+    
+    public Car(String brand,String model,int year,int door,double n){
+        super(brand,model,year,n);
+        this.door=door;
+        fkm=n*20;
+    }
+
+    public int getDoor() {
+        return door;
+    }
+
+    public double getFkm() {
+        return fkm;
+    }
+    public void display(){
+        System.out.println("This is Car class.");
+        super.display();
+        System.out.println("No. of Doors:  "+door);
+        System.out.printf("Car Running %f km.\n",fkm);
+    }
+    
+}

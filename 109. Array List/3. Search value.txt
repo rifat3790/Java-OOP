@@ -1,0 +1,45 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class ArrayList {
+
+    public static void main(String[] args) {
+        
+        ArrayList<Integer> a=new ArrayList<Integer>();
+       
+       System.out.println(a.size());
+       
+       a.add(10);
+       a.add(5);
+       a.add(20);
+       a.add(50);
+       a.add(15);
+       a.add(5,75);
+       
+       System.out.print("\nBefore removing: \t"+a);
+       
+     
+       // Remove 
+       
+       a.remove(2);
+       System.out.print("\nAfter removing: \t"+a);
+       System.out.println("\n\nArray size: "+a.size());
+       
+       
+       
+       //Array list Empty check
+       
+       boolean x=a.isEmpty();
+       System.out.print("\nEmpty check: \t"+x);
+       
+       //Contain means search value
+       
+       boolean c=a.contains(10);
+       System.out.print("\nContains is : \t"+c);
+       
+       //Index check
+       int pos=a.indexOf(50);
+       System.out.print("\nThis index is position:"+pos);
+       
+    }
+}
